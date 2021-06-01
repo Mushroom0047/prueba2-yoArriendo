@@ -6,14 +6,27 @@ using System.Threading.Tasks;
 
 namespace prueba2_yoArriendo {
     class Empleado {
-        private String rut_employee, name_employee, position_employee;
-        private int password;
+        private String Rut_employee, Name_employee, Position_employee;
+        private int Password;
 
         public Empleado(string rut_employee, string name_employee, string position_employee, int password) {
-            this.rut_employee = rut_employee;
-            this.name_employee = name_employee;
-            this.position_employee = position_employee;
-            this.password = password;
+            this.Rut_employee = rut_employee;
+            this.Name_employee = name_employee;
+            this.Position_employee = position_employee;
+            this.Password = password;
+        }
+
+        public String rut_employee { 
+            get { return Rut_employee; }            
+        }
+        public String name_employee {
+            get { return Name_employee; }
+        }
+        public String position_employee {
+            get { return Position_employee; }
+        }
+        public int password {
+            get { return Password; }
         }
     }
 }
